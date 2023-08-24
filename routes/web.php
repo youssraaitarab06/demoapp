@@ -21,7 +21,11 @@ use App\Http\Controllers\SearchController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/pagestatique', function () {
+    return view('pagestatique');
+});
 Route :: get ( '/' , [SearchController::class,'index'] ) ;
+
 Route :: get ( '/liste' , [UserController::class,'liste'] ) ;
 
 Route :: get ( '/search' , [SearchController::class,'recherche'] ) ;
